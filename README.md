@@ -37,6 +37,8 @@ Host.CreateDefaultBuilder(args)
 
 3. Install the program as a Windows Service with the [sc utility](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/sc-create)
 
+> [See here for more detailed information on running .NET Core applications as a Windows Service](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/windows-service?view=aspnetcore-2.2&tabs=visual-studio)
+
 ```
 sc create WindowsServiceSample binPath=c:\code\WindowsServiceSample\WindowsServiceSample.exe
 ```
