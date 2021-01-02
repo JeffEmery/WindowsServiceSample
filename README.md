@@ -1,8 +1,8 @@
 ﻿## Sample .NET Generic Host as Windows Service
 
-Visual Studio 2019 has a project template called a Worker Service. The Worke Service project template creates a simple .NET Core Generic Host application that starts a `BackgroundService` implmentation of the `IHostedService` Interface.
+Visual Studio 2019 has a project template called a Worker Service. The Worker Service project template creates a simple .NET Core Generic Host application that starts a `BackgroundService` implementation of the `IHostedService` interface.
 
-The project follows the boilderplate template for setting up logging, configuration and dependency injection. This setup is described in detail in the `ConsoleHostSample` project. [Detailed information about the .NET Generic Host setup](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-5.0)
+The project follows the boilerplate template for setting up logging, configuration and dependency injection. This setup is described in detail in the [`ConsoleHostSample` project](https://github.com/JeffEmery/ConsoleHostSample). [There is detailed information about the .NET Generic Host setup here.](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-5.0)
 
 The `Worker` `BackgroundService` in the template uses the familiar `while (!stoppingToken.IsCancellationRequested)` loop with a timed `Task.Delay` to loop.
 
